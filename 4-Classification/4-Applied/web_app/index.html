@@ -93,7 +93,7 @@
                         try {
                             // create a new session and load the model.
 
-                            const session = await ort.InferenceSession.create('/Users/robbiewoolterton/Documents/GitHub/ML-For-Beginners/4-Classification/4-Applied/web_app/model.onx');
+                            const session = await ort.InferenceSession.create('');
 
                             const input = new ort.Tensor(new Float32Array(ingredients), [1, 380]);
                             const feeds = { float_input: input };
